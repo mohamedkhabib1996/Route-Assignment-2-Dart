@@ -1,0 +1,19 @@
+import 'dart:io';
+
+void main() {
+  print("Enter number:");
+  int n = int.parse(stdin.readLineSync()!);
+
+  if (n < 0) {
+    print("Factorial is not defined for negative numbers.");
+    return;
+  }
+
+  int factorial = 1;
+
+  for (int i = 1; i <= n; i++) {
+    factorial = factorial * i;
+  }
+
+  print(factorial);
+}
