@@ -1,0 +1,18 @@
+import 'dart:io';
+
+void main() {
+  print("Enter n:");
+  int n = int.parse(stdin.readLineSync()!);
+
+  int sum = 0;
+
+  print("The odd numbers are:");
+
+  for (int i = 1; i <= n; i++) {
+    int odd = 2 * i - 1;
+    print(odd);
+    sum = sum + odd;
+  }
+
+  print("The Sum of Odd Natural Numbers up to $n terms = $sum");
+}
